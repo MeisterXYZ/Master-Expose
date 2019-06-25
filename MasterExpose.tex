@@ -24,6 +24,7 @@
 	    citecolor=blue,
 	    linkcolor=black
 ]{hyperref}
+\usepackage{enumitem}
 
 
 \sloppy
@@ -61,11 +62,11 @@
 { \Large Exposé für eine Masterarbeit}
 
 \bigskip
-zur Erlangung des akademischen Grades\\[0.6cm]
-Master of Science\\[0.6cm]
-im Studiengang Informatik\\
-der Fakultät Informatik und Medien\\
-der Hochschule für Technik, Wirtschaft und Kultur Leipzig
+\small zur Erlangung des akademischen Grades\\[0.6cm]
+\normalsize Master of Science\\[0.6cm]
+\small im Studiengang Informatik\\
+\small der Fakultät Informatik und Medien\\
+\small der Hochschule für Technik, Wirtschaft und Kultur Leipzig
 
 \bigskip
 \bigskip
@@ -94,6 +95,7 @@ der Hochschule für Technik, Wirtschaft und Kultur Leipzig
 \footnotesize Zweitgutachter: \>  \small ... Torsten Böttcher (integration-factory GmbH \& Co. KG)\\
 \footnotesize Kontaktdaten:  \> \small Tel.: +49 69 25669269-0  E-Mail: boettcher@integration-factory.de\\
 \small \\
+\footnotesize Vorauss. Abgabedatum \> \small Januar 2020\\
 \footnotesize Datum \> \small \today\\
 
 \end{tabbing} 
@@ -107,20 +109,69 @@ der Hochschule für Technik, Wirtschaft und Kultur Leipzig
 % Einleitung ------------------------------------------------------------------------
 \clearpage
 \section{Problemstellung}
-...
+Das Unternehmen \textit{integration-factory} ist ein Consulting-Unternehmen und bietet für seine Kunden Lösungen in den Bereichen Business Intelligence und insbesondere Integration von Unternehmensdaten an.\\
+Gegenwärtig besteht dabei in zwei Kunden-Projekten eine Situation, in der durch \textit{integration-factory} eine DWH-Lösung bereitgestellt wurde, welche von einer Marktanalyse von Scheduling-Tools sowie einer Betrachtung von ETL-Worklflow-Optimierung profitieren könnte.\\
+Im Folgenden sollen diese zwei Kundenszenarios beschrieben werden.
+
+\paragraph{Kundenszenario A}
+In Kunden-Solution A ist bereits das kommerzielle ETL-Scheduling-Tool \textit{Control-M} von \textit{BMC Software} im Einsatz. Mit den derzeit im Projekt umgesetzten ETL-Workflows treten Probleme mit unnötigen Wartezeiten bei Statusübergängen im Workflow auf. Es besteht der Bedarf an einer performanteren Lösung.\\
+Durch die Umsetzung dieser Arbeit sollen für diese Kundensituation entsprechende Handlungsoptionen evaluiert werden. Dies soll einerseits durch das Untersuchen der Optimierungsmöglichkeiten in \textit{Control-M} sowie der Betrachtung von Workflow-Optimierungen und andererseits durch einen Vergleich der \textit{Control-M}-Lösung mit weiteren Scheduler-Alternativen geschehen.\\
+
+\paragraph{Kundenszenario B}
+In Kundensolution B kein dediziertes Scheduling-Tool im Einsatz, stattdessen ETL-Tool informatica.\\
+Tool liefert nur rudimentäre Funktionalitäten zum Scheduling. \\
+Bedarf Lösung über Integration von Scheduler zu verbessern, um mehr Möglichkeiten zu haben komplexere ETL-Workflows mit dem Tool lösen zu können.
 
 
 % Zielsetzung und Erkenntnisse ------------------------------------------------------------------------
 \section{Zielsetzung}
-...
+Insgesamt also:
+
 
 % Vorgehensweise ------------------------------------------------------------------------
 \section{Vorgehensweise}
-....
+\subsection{Vorbereitung Evaluation}
+- Untersuchung Themenfeld ETL-Scheduler und ableiten von Anforderungen an einen ETL-Scheduler\\
+- Ableiten weiterer Anforderungen, welche sich aus spezieller Kundensituation ergeben.\\
+- Aufstellen von Bewertungskriterien und Bewertungsmaßstäben\\
+- Aus Kundenszenarios repräsentative Referenz-Workflows ableiten anhand derer später Performancemessung durchgeführt wird. Ggf. werden dabei oder in einem späteren Schritt Optimierungsmöglichkeiten für die bestehenden Workflows sichtbar.
+\subsection{Kandidaten suchen}
+- Suchen von Commerce und Open-Source-Scheduler-Tools und Vorstellung der Kandidaten in schriftlicher Ausarbeitung\\
+- KO-Check: Ist das jeweilige Tool in die Kundensolution integrierbar und erfüllt es die KO-kriterien?
+\subsection{Durchführung Evaluation}
+- Umsetzung der Referenz-Workflows und Performancemessungen in den verschiedenen Schedulern\\
+- Suchen von Optimierungsmöglichkeiten in einzelnen Lösungen\\
+-  Bewertung der übrigen Kriterien in der Bewertungsmatrix\\
+- Auswerten der Bewertungsmatrix
+\subsection{Formulieren der Konsequenzen für Kundensolution A und B}
+Formulieren der Konsequenzen welche sich aus dem Ergebnis der Evaluation ergeben.\\
+Ggf. erfolgt eine Umsetzung der Beschriebenen Anpassung/Änderungen beim Kunden.
 
 % Voraussichtliche Gliederung ------------------------------------------------------------------------
 \section{Voraussichtliche Gliederung}
-...
+Aus der geschilderten Vorgehensweise ergibt sich die folgende voraussichtliche Gliederung.
+
+\begin{enumerate}
+	\item Topic
+	\begin{enumerate}[label*=\arabic*.]
+		\item First Subtopic
+		\item Second Subtopic
+		\begin{enumerate}[label*=\arabic*.]
+			\item First Sub-Subtopic
+			\item Second Sub-Subtopic
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+
+\section{Erste Literaturverweise}
+
+Generelle Literatur zu DWH\\
+Panos Paper zu Einstieg in Literatur mit Parallelisierung und Sequentiallisierung\\
+Vergleich Features von Anbietern an den Stellen wo Literatur fehlt.
+
+\section{Zeitplan}
+gegenwärtig offenes To-Do.
 
 % ***********************************************
 \end{document}
