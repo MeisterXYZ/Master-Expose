@@ -1,0 +1,128 @@
+% Muster für eine Bachelorarbeit im Studiengang Angewandte Mathematik an der 
+% Fakultät Informatik, Mathematik und Naturwissenschaften an der HTWK Leipzig 
+% Stand: Oktober 2011, Prof. Dr. Martin Grüttmüller
+% Hinweis: Andere Kollegen können anderen Ansprüche an die Gesatltung haben.
+
+
+\documentclass[a4paper,12pt]{scrartcl}
+
+\usepackage{makeidx}
+\usepackage{amsmath,amsfonts,amsthm}
+%\usepackage{german}
+\usepackage[ngerman]{babel}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{dinat}
+\usepackage{tocstyle}
+\usetocstyle{allwithdot}
+
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage[headsepline]{scrpage2}
+\usepackage[
+	    colorlinks=true,
+	    urlcolor=blue,
+	    citecolor=blue,
+	    linkcolor=black
+]{hyperref}
+
+
+\sloppy
+% Umgebungen (Dokumentation in amsthdoc.pdf):
+\newtheorem{Satz}{Satz}[subsection]
+\newtheorem{Lemma}[Satz]{Lemma}
+\newtheorem{Korollar}[Satz]{Korollar}
+
+\theoremstyle{definition}
+\newtheorem{Definition}[Satz]{Definition}
+\newtheorem*{Bemerkung}{Bemerkung}
+
+
+
+% Beginn des eigentlichen Dokuments --------------------------------------------
+\begin{document}
+
+\ohead{\pagemark}
+\ihead{\sectionmark}
+\cfoot{}
+\pagestyle{scrheadings}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+\thispagestyle{empty} % no page number
+
+\begin{titlepage}
+\begin{center}
+
+\includegraphics[height=3cm]{HTWK_Logo_RGB}
+% Titel ------------------------------------------------------------------------
+\vspace*{1cm}
+
+\bigskip
+\bigskip
+\large
+{ \Large Exposé für eine Masterarbeit}
+
+\bigskip
+zur Erlangung des akademischen Grades\\[0.6cm]
+Master of Science\\[0.6cm]
+im Studiengang Informatik\\
+der Fakultät Informatik und Medien\\
+der Hochschule für Technik, Wirtschaft und Kultur Leipzig
+
+\bigskip
+\bigskip
+
+\bigskip
+\bigskip
+{\Large Titel Ihrer Arbeit}\\
+{\Large -- Untertitel --}
+
+\end{center}
+
+\bigskip
+\bigskip
+\large
+\begin{tabbing}
+\hspace{4cm}\=\kill
+\footnotesize Vorgelegt von:  \> \small Raphael Drechsler\\
+\footnotesize Anschrift:  \> \small Kieler Str. 34, 04357 Leipzig\\
+\footnotesize Kontaktdaten:  \> \small Tel.: +49 1525 4194262  E-Mail: raphael.drechsler@googlemail.com\\
+\footnotesize Matrikelnummer:  \> \small Raphael Drechsler\\
+\footnotesize Fachsemester:  \> \small Raphael Drechsler\\
+\small \\
+\footnotesize Erstgutachter:  \> \small Prof. Dr.-Ing. Thomas Kudrass (HTWK)\\ 
+\footnotesize Kontaktdaten:  \> \small Tel.: +49 341 3076-6420  E-Mail: thomas.kudrass@htwk-leipzig.de\\
+\small \\
+\footnotesize Zweitgutachter: \>  \small ... Torsten Böttcher (integration-factory GmbH \& Co. KG)\\
+\footnotesize Kontaktdaten:  \> \small Tel.: +49 69 25669269-0  E-Mail: boettcher@integration-factory.de\\
+\small \\
+\footnotesize Datum \> \small \today\\
+
+\end{tabbing} 
+\end{titlepage}
+
+% Inhaltsverzeichnis ------------------------------------------------------------------------
+\clearpage
+\tableofcontents
+\clearpage
+
+% Einleitung ------------------------------------------------------------------------
+\clearpage
+\section{Problemstellung}
+...
+
+
+% Zielsetzung und Erkenntnisse ------------------------------------------------------------------------
+\section{Zielsetzung}
+...
+
+% Vorgehensweise ------------------------------------------------------------------------
+\section{Vorgehensweise}
+....
+
+% Voraussichtliche Gliederung ------------------------------------------------------------------------
+\section{Voraussichtliche Gliederung}
+...
+
+% ***********************************************
+\end{document}
+% ***********************************************
+
